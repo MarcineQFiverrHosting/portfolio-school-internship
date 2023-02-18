@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Ubuntu:wght@300;400;700&display=swap');
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+h1{
+    color: #fff;
+    font-size: 40px;
+    margin: 0;
+}
+h2{
+    color: #fff;
+    font-weight: lighter;
+    margin: 0;
+    letter-spacing: 5px;
+    font-size: 18px;
+    background-color: #061361;
+}
+h3{
+    font-size: 64px;
+    color: #242424;
+    margin-top: 38px;
+    margin-bottom: 8px;
+}
+h4{
+    font-size: 42px;
+    margin: 0;
+}
+/*#region Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#hamburger{
+    display: none;
+    cursor: pointer;
+}
+#banner{
+    width: 100%;
+    height: 624px;
+    background-color: #061361;
+    background-image: url(./img/banner4.png);
+    background-position: center;
+    background-size: auto 624px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+icon{
+    cursor: pointer;
+}
+#hello_page{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./img/avatar_t2.png);
+    background-size: 400px 400px;
+}
+#header_logo{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+}
+#header_logo p{
+    margin: 0;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: #061361;
+    text-decoration: none;
+    user-select: none;
+}
+#header_menu{
+    display: flex;
+    padding-right: 20px;
+}
+#header_menu a{
+    width: 120px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #061361;
+    text-transform: uppercase;
+}
+.header_line{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(20, 215, 229, 0);
+    position: absolute;
+    bottom: 0;
+}
+#header_menu a:hover .header_line{
+    background-color: #14d7e5;
+}
+#header_menu a:hover{
+    font-weight: bold;
+}
+/*#endregion*/
+/*#region About Me*/
+#socials{
+    display: flex;
+}
+#socials a{
+    margin: 4px;
+    color: #fff;
+    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#socials a:hover{
+    filter: brightness(115%);
+}
+#avatar{
+    width: 450px;
+    border-radius: 50px;
+}
+#about_me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#about_me div{
+    width: 500px;
+    height: min-content;
+    padding: 0px 25px;
+}
+#about_me h3{
+    font-size: 56px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #14d7e5;
+}
+#about_me h3:after{
+    content: "Marcin Protas";
+}
+#about_me h3:hover:after{
+    content: "Marc#n Protas";
+}
+#about_me h4{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #061361;
+}
+#about_me p{
+    font-size: 22px;
+    margin-top: 4px;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+#about_me span{
+    color: #b1e02f;
+    font-weight: bold;
+}
+/*#endregion About Me*/
+/*#region Project*/
+#projects{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 38px;
+    align-items: center;
+}
+#projects_container{
+    max-width: 1400px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.project_container button, .project_tech a{
+    transition: ease-in-out filter 0.2s;
+}
+.project_container button:hover, .project_tech a:hover{
+    filter: brightness(115%);
+}
+.project_container{
+    width: 400px;
+    padding: 20px;
+    border-radius: 48px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 10px;
+}
+.project_container img{
+    width: 400px;
+    border-radius: 40px;
+}
+.project_tech{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.project_tech a{
+    background-color: #f7f7f7;
+    width: max-content;
+    padding: 8px;
+    border-radius: 16px;
+    margin-right: 8px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.project_container button{
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.project_container p{
+    font-size: 18px;
+    margin-top: 4px;
+}
+.project_container a{
+    text-decoration: none;
+    font-weight: bold;
+}
+/*#endregion Project*/
+/*#region Overlapp Tab*/
+.project_container:nth-child(1) p a{
+    color: #f91e5f;
+    text-transform: capitalize;
+}
+.project_container:nth-child(1) p a:nth-child(2n){
+    color: #061361;
+}
+.project_container:nth-child(1) button{
+    background-color: #f91e5f;
+} 
+/*#endregion*/
+/*#region Fiverr Tab*/
+.project_container:nth-child(2) p a{
+    color: #1dbf73;
+    text-transform: capitalize;
+}
+.project_container:nth-child(2) p a:nth-child(2n){
+    color: #003912;
+}
+.project_container:nth-child(2) button{
+    background-color: #1dbf73;
+} 
+/*#endregion*/
+/*#region InstalingBot Tab*/
+.project_container:nth-child(3) p a{
+    color: #ffb400;
+    text-transform: capitalize;
+}
+.project_container:nth-child(3) p a:nth-child(2n){
+    color: #2d4059;
+}
+.project_container:nth-child(3) button{
+    background-color: #ffb400;
+} 
+/*#endregion*/
+/*#region itch.io Tab*/
+.project_container:nth-child(4) p a{
+    color: #ff2449;
+    text-transform: capitalize;
+}
+.project_container:nth-child(4) p a:nth-child(2n){
+    color: #db0024;
+}
+.project_container:nth-child(4) button{
+    background-color: #ff2449;
+} 
+/*#endregion*/
+/*#region Frontend Mentor Tab*/
+.project_container:nth-child(5) p a{
+    color: #3c51a2;
+    text-transform: capitalize;
+}
+.project_container:nth-child(5) p a:nth-child(2n){
+    color: #66bece;
+}
+.project_container:nth-child(5) button{
+    background-color: #3c51a2;
+} 
+/*#endregion*/
+/*#region Art Station Tab*/
+.project_container:nth-child(6) p a{
+    color: #1153e8;
+    text-transform: capitalize;
+}
+.project_container:nth-child(6) p a:nth-child(2n){
+    color: #13aff0;
+}
+.project_container:nth-child(6) button{
+    background-color: #1153e8;
+} 
+/*#endregion*/
+/*#region Skills*/
+#skills{
+    background: #006aff;
+    color: #fefefe;
+    padding-bottom: 48px;
+    padding: 38px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#skills h3{
+    color: #fefefe;
+    margin-top: 0;
+}
+#skills_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+#skills_con div{
+    display: flex;
+    align-items: center;
+    background-color: #061361;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px;
+    height: 80px;
+}
+#skills_con icon{
+    font-size: 48px;
+    color: #006aff;
+}
+#skills_con p{
+    margin: 8px;
+}
+#skills_con a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #006aff;
+}
+/*#endregion*/
+/*#region Contact*/
+#contact icon{
+    background-color: #001a3e;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 2px;
+    margin-right: 4px;
+}
+#contact{
+    padding: 38px;
+    display: flex;
+    background-color: #1153e8;
+    color: #fefefe;
+    justify-content: center;
+}
+#contact div, form{
+    width: 300px;
+    margin: 10px;
+}
+#contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#contact div p{
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #061361;
+    border-radius: 25px;
+    padding: 25px;
+}
+textarea, form input{
+    resize: none;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    height: 48px;
+    margin: 10px 0px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 4px solid #fff;
+    font-weight: bold;
+    color: #242424;
+}
+form input::placeholder, textarea::placeholder{
+    color: #cdcdcd;
+    font-weight: bold;
+    font-size: 16px;
+}
+form input:focus, textarea:focus{
+    border: 4px solid #dedede;
+}
+textarea{
+    height: 96px;
+}
+form a{
+    width: 100%;
+    height: 48px;
+    background-color: #006aff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+/*#endregion*/
+/*#region Hobby*/
+#hobby{
+    padding: 38px;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#hobby_container{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+#hobby_container div{
+    background-color: #fff;
+    width: 300px;
+    height: 365px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+#hobby h3{
+    margin-top: 0px;
+}
+#hobby_container h4{
+    text-transform: uppercase;
+    color: #006aff;
+}
+#hobby_container p{
+    color: #a0a0a0;
+}
+#hobby_container span{
+    color: #061361;
+    font-weight: bold;
+}
+#hobby_container icon{
+    color: #061361;
+    font-size: 48px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hobby_container .icon-globe{
+    font-size: 56px;
+}
+/*#endregion*/
+footer{
+    font-family: 'ubuntu';
+    background-color: #050505;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+/*#region Responsive*/
+@media only screen and (max-width: 850px) {
+    #socials{
+        justify-content: center;
+    }
+    *{
+        max-width: 100vw !important;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #header_menu{
+        height: 0;
+        overflow: hidden;
+        transition: ease-in-out height 0.2s;
+    }
+    #checkbox:checked ~ #header_menu{
+        height: 250px;
+    }
+    #hamburger{
+        transition: ease-in-out transform 0.2s;
+    }
+    #checkbox:checked ~ #hamburger{
+        transform: rotate(-90deg);
+    }
+    #header_menu{
+        position: absolute;
+        width: 100vw;
+        background-color: #fff;
+        flex-direction: column;
+        top: 115px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    #header_menu a{
+        padding: 15px;
+        height: 50px;
+        box-sizing: border-box;
+    }
+    #header_menu a{
+        width: 100%;
+    }
+    #header_menu a .header_line{
+        background-color: #fcfcfc;
+    }
+    #about_me{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 38px;
+        text-align: center;
+    }
+    #skills_con{
+        width: 100%;
+    }
+    #skills_con div{
+        height: auto;
+        flex-direction: column;
+    }
+    #skills_con div:nth-child(2n){
+        flex-direction: column-reverse;
+    }
+    #hobby{
+        display: flex;
+    }
+    #hobby div{
+        height: auto;
+        width: 90%;
+    }
+    #contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    #hobby h3{
+        text-align: center;
+    }
+    #hamburger{
+        display: flex;
+        width: 115px;
+        height: 115px;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon-menu{
+        font-size: 48px;
+        color: #14d7e5;
+    }
+}
+@media only screen and (max-width: 475px) {
+    #avatar{
+        width: 100%;
+        height: auto
+    }
+    h3, #projects h3, #about_me h3, #skills h3{
+        font-size: 42px;
+        text-align: center;
+    }
+    #skills, #hobby{
+        padding: 38px 0px;
+    }
+    #contact, #hobby_container, #skills_con, #projects_container, #about_me{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #contact div, form, #hobby div, #about_me div, #hobby, #skills_con div, .project_container, .project_container img{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 400px) {
+    h3, #projects h3, #about_me h3, #skills h3{
+        font-size: 32px;
+    }
+    h1, h2{
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 350px){
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    #about_me h3{
+        font-size: 28px;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #hobby_container{
+        width: 750px;
+    }
+    #hobby_container div:nth-child(5){
+        width: 640px;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #hobby_container{
+        width: 1100px;
+    }
+    #hobby_container div:nth-child(4),#hobby_container div:nth-child(5){
+        width: 470px;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 2000px) {
+    #hobby_container{
+        width: 1800px;
+    }
+    #hobby_container div:nth-child(4){
+        width: 300px;
+    }
+    #hobby_container div:nth-child(5){
+        display: none;
+    }
+}
+/*#endregion*/

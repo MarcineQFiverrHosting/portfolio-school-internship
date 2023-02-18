@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/avatar_t2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./img/css/fontello.css">
+    <title>Marcin Protas | Portfolio</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="checkbox" style="display: none;">
+        <a href="#" id="header_logo">
+            <img src="./img/avatar_t2.png" alt="logo" width="75px">
+            <div>
+                <p>MARCIN</p>
+                <p style="color: #04e4fc;">PROTAS</p>
+            </div>
+        </a>
+        <div id="header_menu">
+            <a href="#about_me">O mnie<div class="header_line"></div></a>
+            <a href="#projects">Projekty<div class="header_line"></div></a>
+            <a href="#skills">Umiejętności<div class="header_line"></div></a>
+            <a href="#hobby">Wolny Czas<div class="header_line"></div></a>
+            <a href="#contact">Kontakt<div class="header_line"></div></a>
+        </div>
+        <div id="hamburger"><label for="checkbox"><icon class="icon-menu"></icon></label></div>
+    </header>
+    <section id="banner">
+        <div id="hello_page">
+            <h1>MARCIN PROTAS</h1>
+            <h2>PORTFOLIO PROGRAMISTY</h2>
+        </div>
+    </section>
+    <section id="about_me">
+        <div>
+            <h3></h3>
+            <h4>Unity Developer</h4>
+            <p>17-letni programista, uczęszczający do Technikum w Ostrołęce.</p>
+            <figcaption id="socials">
+                <a href="https://fiverr.com/marcineq" class="icon-fiverr" style="background-color: #1dbf73;"></a>
+                <a href="https://github.com/marcineqr" class="icon-github-circled" style="background-color: #171515; font-size: 20px;"></a>
+                <a href="https://discordapp.com/users/605416751227994122" class="icon-discord-1" style="background-color: #5865F2;"></a>
+                <a href="https://www.linkedin.com/in/marcin-protas-89016b238/" class="icon-linkedin" style="background-color: #0077B5;"></a>
+            </figcaption>
+        </div>
+        <img src="./img/avatar2.png" alt="logo" id="avatar">
+    </section>
+    <section id="projects">
+        <h3>PROJEKTY</h3>
+        <div id="projects_container">
+            <div class="project_container">
+                <img src="./img/thumbnail_overlapp.png" alt="overlapp logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/C_Sharp" style="background-color: #b1e02f;">C#</a><a href="https://en.wikipedia.org/wiki/Unity_(game_engine)" style="background-color: #04e4fc;">Unity</a></div>
+                <h4 style="color: #061361;">Overlapp</h4>
+                <p style="clear: both;">Pod koniec 2022 roku wraz z <a href="http://kacperglinka.pl">kolegą</a> postanowiłem założyć konto developerskie w Google Play. Pod szyldem <a href="https://play.google.com/store/apps/dev?id=7309622587084153640">Overlapp</a>, udostępniłem już <a href="https://play.google.com/store/apps/details?id=com.OverlappPl.PunkBirds">pierwszą grę</a>, która była wynikiem zlecenia nad <a href="https://www.fiverr.com/marcineq">Fiverr</a>, w ramach którego musiałem zrobić grę na potrzeby filmu na YouTube. Aktualnie pracuję nad <a href="./img/paul_the_duck.png">Endless runner</a> inspirowanym <a href="https://play.google.com/store/apps/details?id=com.kiloo.subwaysurf&hl=en&gl=US">Subway Surfers</a>.</p>
+                <button onclick='location.href="https://play.google.com/store/apps/dev?id=7309622587084153640";' class="icon-gamepad"></button>
+            </div>
+            <div class="project_container">
+                <img src="./img/thumbnail_fiverr.png" alt="fiverr logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/C_Sharp" style="background-color: #003912;">C#</a><a href="https://en.wikipedia.org/wiki/Unity_(game_engine)" style="background-color: #1dbf73;">Unity</a></div>
+                <h4 style="color: #003912;">Fiverr</h4>
+                <p style="clear: both;">Początek nie był łatwy, nie mogłem przebierać w ofertach. Przyjąłem jedno zlecenie za śmiesznie niską stawkę, ponieważ wierzyłem, że jego ukończenie wpłynie na pozycjonowanie <a href="https://fiverr.com/marcineq">mojego konta</a>. Nie myliłem się, z każdym kolejnym zleceniem moje <a href="https://www.fiverr.com/support/articles/360010750318-Viewing-Gig-statistics">wyświetlenia</a> rosły a ja mogłem sobie pozwolić na rozwojowy zarobek w godzinach wolnych od szkoły.</p>
+                <button onclick='location.href="https://fiverr.com/marcineq";' class="icon-fiverr"></button>
+            </div>
+            <div class="project_container">
+                <img src="./img/thumbnail_instaling_bot.png" alt="instaling bot logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" style="background-color: #2d4059;">Python</a><a href="https://en.wikipedia.org/wiki/Node.js" style="background-color: #ffb400;">Node.js</a><a href="https://en.wikipedia.org/wiki/Windows_Presentation_Foundation" style="background-color: #2d4059;">WPF</a></div>
+                <h4 style="color: #1c2b3d;">instalingBot</h4>
+                <p style="clear: both;">W mojej klasie każdy uczeń co miesiąc dostaje ocenę na podstawie wykonanych sesji na portalu <a href="https://instaling.pl">instaling</a>, jest to dość uciążliwe, więc postanowiłem pomóc sobie i kolegom. Używając <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> i <a href="https://en.wikipedia.org/wiki/Selenium_(software)">Selenium</a> stworzyłem prosty program, który nas w tym zastąpił. Z czasem postanowiłem ułatwić jego użytkowanie osobom postronnym. Proces rozwoju jest dostępny na mojej stronie.</p>
+                <button onclick='location.href="https://instaling-bot.pl";' class="icon-globe-1"></button>
+            </div>
+            <div class="project_container">
+                <img src="./img/thumbnail_itch_io.png" alt="itch.io logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/C_Sharp" style="background-color: #ff2449;">C#</a><a href="https://en.wikipedia.org/wiki/Unity_(game_engine)" style="background-color: #db0024;">Unity</a><a href="https://en.wikipedia.org/wiki/Lua_(programming_language)" style="background-color: #ff2449;">Lua</a></div>
+                <h4 style="color: #4b000d;">itch.io</h4>
+                <p style="clear: both;">Ukończyłem kilka kursów <a href="https://www.youtube.com/@Brackeys">Brackeys</a> na YouTube, ale każdy mój projekt kończył się na tworzeniu assetów, nigdy nie wyszedłem z "strefy komfortu", nie próbowałem napisać czegoś swojego bez poradnika. Wszystko zmienił mój <a href="http://kacperglinka.pl">kolega</a>, który zachęcił mnie do wzięcia udziału w <a href="https://itch.io/jam/indie-tales-jam">The Indie Tales Jam</a>. Hackathony na <a href="https://itch.io">tym portalu</a> dały mi wiele praktycznego doświadczenia.</p>
+                <button onclick='location.href="https://marcineqq.itch.io";' class="icon-itchio"></button>
+            </div>
+            <div class="project_container">
+                <img src="./img/thumbnail_frontend_mentor.png" alt="frontend mentor logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/HTML" style="background-color: #66bece;">HTML</a><a href="https://en.wikipedia.org/wiki/CSS" style="background-color: #5063aa;">CSS</a><a href="https://en.wikipedia.org/wiki/JavaScript" style="background-color: #f9c7c5;">JS</a><a href="https://en.wikipedia.org/wiki/API" style="background-color: #1c2122;">API</a></div>
+                <h4 style="color: #1c2122;">Frontend Mentor</h4>
+                <p style="clear: both;">W drugiej klasie Technikum zaczęliśmy tworzyć strony internetowe z Egzaminów zawodowych E.14. Wykonywanie tych zadań było przyjemne, ale dość generyczne. Zacząłem wtedy dodatkowo dla siebie (wraz z dwoma kolegami <a href="https://www.frontendmentor.io/profile/pontonx">Glinką</a> i <a href="https://www.frontendmentor.io/profile/chory12">Chorym</a>) realizować zadania z tej <a href="https://www.frontendmentor.io">strony</a>. Praca nad tymi projektami dała mi dużo obycia w technologiach frontend'owych.</p>
+                <button onclick='location.href="https://www.frontendmentor.io/profile/ZziomoO";' class="icon-frontend-mentor"></button>
+            </div>
+            <div class="project_container">
+                <img src="./img/thumbnail_art_station.png" alt="art station logo">
+                <div class="project_tech"><a href="https://en.wikipedia.org/wiki/Blender_(software)" style="background-color: #13aff0;">Blender</a><a href="https://en.wikipedia.org/wiki/Adobe_Creative_Cloud" style="background-color: #1153e8;">Adobe</a><a href="https://en.wikipedia.org/wiki/Aseprite" style="background-color: #13aff0;">Aseprite</a></div>
+                <h4 style="color: #030021;">Art Station</h4>
+                <p style="clear: both;">Na długo przed wyświetleniem pierwszego <a href='https://en.wikipedia.org/wiki/"Hello,_World!"_program'>"Hello World!"</a> w mojej karierze. Wolny czas spędzałem na produkcji amatorskich filmików oraz grafice. Uczyłem się wszystkiego: montażu, grafiki <a href="https://en.wikipedia.org/wiki/2D_computer_graphics">2D</a>, <a href="https://en.wikipedia.org/wiki/3D_computer_graphics">3D</a>, jak i <a href="https://en.wikipedia.org/wiki/Vector_graphics">wektorowej</a>. Zdobyte wtedy doświadczenie i ogólne obycie nadal wykorzystuję, tworząc m.in. assety do moich gier czy grafikę na strony takie jak ta.</p>
+                <button onclick='location.href="https://www.artstation.com/marcineq";' class="icon-artstation"></button>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h3>UMIEJĘTNOŚCI</h3>
+        <div id="skills_con">
+            <div><icon class="icon-gamepad"></icon><p>Moją główną specjalizacją jest <a href="https://en.wikipedia.org/wiki/Unity_(game_engine)">Unity</a>. Bawiłem się trochę <a href="https://en.wikipedia.org/wiki/Roblox">Roblox Studio</a> i <a href="https://en.wikipedia.org/wiki/LÖVE_(game_framework)">Love2D</a>. Wraz ze zbudowaniem nowego komputera ukończę <a href="https://www.gamedev.tv/p/unreal-5-0-c-developer-learn-c-and-make-video-games">kurs Unreal Engine 5</a>. Niedawno zakupiłem <a href="https://www.meta.com/pl/en/quest/products/quest-2/">Oculus Quest 2</a>, więc zamierzam nauczyć się również czegoś nowego w tym kierunku.</p></div>
+            <div><p>Posiadam dobrą znajomość technologii <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">Fronted</a> i podstawową znajomość <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">Backend</a>. Tworzenie stron internetowych nie jest moim priorytetem, ale zamierzam nadrobić braki w Backend, nauczyć się <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)">React'a</a> i <a href="https://en.wikipedia.org/wiki/Three.js">Three.js</a> z <a href="https://threejs-journey.com/?c=p1">kursu Bruno Simon</a>.</p><icon class="icon-globe-1"></icon></div>
+            <div><icon class="icon-brush"></icon><p>Zanim zająłem się programowaniem, jeszcze w podstawówce dużo czasu spędzałem tworząc grafikę, zaczynałem od darmowych programów tj. <a href="https://en.wikipedia.org/wiki/GIMP">Gimp</a>, ale z czasem przerzuciłem się na <a href="https://en.wikipedia.org/wiki/Adobe_Creative_Cloud">Creative Cloud</a>. Mam również spore doświadczenie w tworzeniu grafiki 3D w <a href="https://en.wikipedia.org/wiki/Blender_(software)">Blenderze</a>.</p></div>
+            <div><p>Następną rzeczą, której chciałbym się nauczyć, jest tworzenie aplikacji mobilnych w <a href="https://en.wikipedia.org/wiki/Android_Studio">Android Studio</a> i <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)">Swift</a>, ale do tego potrzebuję Mac'a lub MacBook'a, na którego mnie nie stać, chyba że zbuduję <a href="https://en.wikipedia.org/wiki/Hackintosh">Hackintosha</a>.</p><icon class="icon-mobile"></icon></div>
+        </div>
+    </section>
+    <section id="hobby">
+        <h3>W WOLNYM CZASIE</h3>
+        <div id="hobby_container">
+            <div>
+                <icon class="icon-globe"></icon>
+                <h4>Podróże</h4>
+                <p>Aktualnie nigdy nie przekroczyłem granicy Polski, ale przed zakończeniem <span>Technikum</span> chcę odwiedzić każdy kraj wchodzący w skład strefy <span>Schengen</span>. W najbliższym czasie planuję odwiedzić <span>Pragę</span> przy okazji meczu Polska-Czechy w ramach kwalifikacji do Euro 2024. Planuję zrobić kilka dłuższych podróży np. objechanie całego <span>Bałtyku</span>, ale będę również polował na loty last minute, aby tanio zwiedzić np. <span>Maroko</span> w kilka dni.</p>
+            </div>
+            <div>
+                <icon class="icon-soccer-ball"></icon>
+                <h4>Sport</h4>
+                <p>Moim ulubionym sportem jest <span>Koszykówka</span>. Lubię również grać w <span>Piłkę Nożną</span> mimo tego, że grać w nią nie umiem. Nie uznaję siatkówki, ponieważ nie ma sportu bez potu a w tej grze ciężko o zmęczenie. Jestem utytułowanym mistrzem <span>Szachów Szybkich</span> w mojej szkole. Od niedawna chodzę na siłownię. Mam kilka dalekich dla mnie celów, chciałbym kiedyś wejść na <span>Mount Blanc</span> i <span>Ukończyć Maraton.</span></p>
+            </div>
+            <div>
+                <icon class="icon-gamepad"></icon>
+                <h4>Gry</h4>
+                <p>Pochodzę z pokolenia <span>Minecrafta</span>, grałem na <span>By Zyczu</span> do 1.7.10, a wraz z premierą wersji 1.8 kupiłem oryginalną grę, wychowałem się na Pingwin Pack, Minecraft na Modach i reZi & Pingwin ADVENTURES. Poza tym moje ulubione gry to Portal 2, Half-Life 2, NFS:U2, Dying Light i <span>Wiedźmin 3</span>. Z mniej znanych gier polecam serię <span>We Were Here</span>, a wraz z nowym komputerem planuję przejść Dying Light 2, <span>Cyberpunk 2077</span> i RDR2.</p>
+            </div>
+            <div>
+                <icon class="icon-video"></icon>
+                <h4>Kino</h4>
+                <p>Swego czasu chciałem nadrobić wszystkie klasyki <span>Kina</span>, ale psycha siadała, gdy próbowałem oglądać Bergmana czy Tarkowskiego. Obejrzałem kilka naprawdę dobrych <span>Filmów</span> i aktualnie mało który kolejny jest w stanie mnie zaangażować, więc ich nie oglądam. Moje ulubione filmy to <span>Podziemny Krąg</span>, <span>Siedem</span> i <span>Incepcja</span>. Seriali również dużo nie oglądam ponieważ zajmują sporo czasu, ale bardzo lubię <span>Rick & Morty</span>.</p>
+            </div>
+            <div>
+                <icon class="icon-music"></icon>
+                <h4>Muzyka</h4>
+                <p><span>Muzyka</span> nigdy nie była dla mnie ważna. Dużo bardziej lubiłem słuchać <span>Podcastów</span>, najczęściej słuchanym przeze mnie na <span>Spotify</span> jest <span>Kryminatorium</span>, ale wracając do muzyki aktualnie Belmondziak (Belmondo/Belmondawg) i Be do gie (Kaz Bałagane). <span>Poppyn' Them Thangs!</span></p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div>
+            <h4>KONTAKT</h4>
+            <p onclick="navigator.clipboard.writeText('marcineq#6828')"><icon class="icon-discord-1"></icon>marcineq#6828</p>
+            <p onclick="navigator.clipboard.writeText('kontakt@marcinprotas.pl')"><icon class="icon-mail-alt"></icon>kontakt@marcinprotas.pl</p>
+            <p onclick="navigator.clipboard.writeText('marcin.protas.71066')"><icon class="icon-messenger"></icon>marcin.protas.71066</p>
+        </div>
+        <form>
+            <h4>NAPISZ DO MNIE <span style="color: #006aff;">:)</span></h4>
+            <input type="text" placeholder="imię i nazwisko">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="temat">
+            <textarea placeholder="wiadomość"></textarea>
+            <a href='mailto:kontakt@marcinprotas.pl'>WYŚLIJ</a>
+        </form>
+    </section>
+    <footer>
+        <span style="font-weight: lighter;">Made by </span><span style="color: #006aff; font-weight: bold;">Overlapp</span>
+    </footer>
+</body>
+</html>
